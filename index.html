@@ -15,7 +15,7 @@
 
 <body>
     <!-- header -->
-    <header>
+    <nav class="navbar">
         <div class="logo"><span>A</span>lzi.</div>
         <ul class="navlist">
             <li><a href="#">Home</a></li>
@@ -25,7 +25,7 @@
             <li><a href="#">Contact</a></li>
         </ul>
         <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
-    </header>
+    </nav>
 
     <!-- home -->
     <section id="home" class="home">
@@ -65,7 +65,6 @@
             <img src="IMG_5609.png" alt="">
         </div>
         <div class="text-about">
-            <span>let me introduce myself</span>
             <h2>About Me</h2>
             <p>Hello, my name is Alzi, undergrad student of informatic from Universitas Teknokrat Indonesia. I'm
                 excited to share that I am a Google Bangkit Graduate from the 2023 batch 1, specializing in the
@@ -83,38 +82,47 @@
 
     <!-- skills -->
     <section id="skills" class="skills">
-        <h2>My Skills</h2>
-        <div class="skill">
-            <span>HTML</span>
-            <div class="bar">
-                <div class="progress" data-percent="80%">80%</div>
+        <h2 class="text-center">My Skills</h2>
+        <div class="container-skills">
+            <div class="skill">
+                <span>HTML</span>
+                <div class="bar">
+                    <div class="progress" data-percent="80%">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>CSS</span>
+                <div class="bar">
+                    <div class="progress" data-percent="80%">80%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>JavaScript</span>
+                <div class="bar">
+                    <div class="progress" data-percent="75%">75%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>Node Js</span>
+                <div class="bar">
+                    <div class="progress" data-percent="70%">70%</div>
+                </div>
+            </div>
+            <div class="skill">
+                <span>DBMS</span>
+                <div class="bar">
+                    <div class="progress" data-percent="80%">80%</div>
+                </div>
             </div>
         </div>
-        <div class="skill">
-            <span>CSS</span>
-            <div class="bar">
-                <div class="progress" data-percent="80%">80%</div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>JavaScript</span>
-            <div class="bar">
-                <div class="progress" data-percent="75%">75%</div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>Node Js</span>
-            <div class="bar">
-                <div class="progress" data-percent="70%">70%</div>
-            </div>
-        </div>
-        <div class="skill">
-            <span>DBMS</span>
-            <div class="bar">
-                <div class="progress" data-percent="80%">80%</div>
-            </div>
-        </div>
+    </section>
 
+    <!-- experience -->
+    <section id="experience" class="experience">
+        <h2 class="text-center">Experience</h2>
+        <div id="experience-list">
+            <!-- Isi experience menggunakan JavaScript -->
+        </div>
     </section>
 
     <script src="main.js"></script>

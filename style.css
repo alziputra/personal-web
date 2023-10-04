@@ -5,9 +5,10 @@
     --primary-color: #bc13fe;
     --secondary-color: #242424;
     --bg-color: #190617;
-    --big-font: 2.5rem;
-    --medium-font: 2rem;
-    --small-font: 1.5rem;
+    --font-xl: 2.5em;
+    --font-l: 2em;
+    --font-m: 1.5em;
+    --font-s: 1em;
     --box-neon-1: 0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
@@ -36,12 +37,12 @@ body {
 }
 
 section {
-    padding: 100px 10%
+    padding: 60px 10%;
 }
 
 
 /* header ____________________________ */
-header {
+.navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -50,7 +51,7 @@ header {
 }
 
 .logo {
-    font-size: var(--medium-font);
+    font-size: var(--font-m);
     font-weight: 700;
     letter-spacing: 1px;
 }
@@ -65,7 +66,7 @@ span {
 
 .navlist a {
     color: var(--text-color);
-    font-size: var(--small-font);
+    font-size: var(--font-m);
     font-weight: 700;
     padding: 10px 20px;
 }
@@ -104,7 +105,7 @@ span {
 }
 
 .home-content h1 {
-    font-size: var(--big-font);
+    font-size: var(--font-l);
     font-weight: 700;
 }
 
@@ -221,7 +222,6 @@ span {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 100px 10%;
     width: 100%;
 }
 
@@ -248,27 +248,33 @@ span {
     margin-bottom: 2rem;
 }
 
-
-
-/* skills ____________________________ */
-
-.skills {
-    padding-left: 300px;
-    padding-right: 300px;
+.text-center {
+    text-align: center;
 }
 
-.skills h2 {
-    font-size: var(--medium-font);
+.about .text-about h2,
+.skills h2,
+.experience h2 {
+    font-size: var(--font-l);
     font-weight: 700;
-    text-align: center;
+}
+
+/* skills ____________________________ */
+.skills h2 {
     margin-bottom: 2rem;
+}
+
+.container-skills {
+    padding: 2rem;
+    justify-content: center;
+    align-items: center;
 }
 
 .skill .bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
     background: var(--secondary-color);
     box-shadow: var(--box-neon-1);
     border-radius: 6px;
@@ -284,10 +290,51 @@ span {
     font-size: 1rem;
     color: #f8f4fa;
     background-color: var(--primary-color);
-    padding: 4px 4px;
+    padding: 0 6px;
     border-radius: 6px 10px 10px 6px;
-    height: 30px;
+    height: 20px;
     width: 0;
     text-align: right;
     transition: width 2s;
+}
+
+/* experience ____________________________ */
+.experience {
+    border-radius: 5px;
+    box-shadow: var(--box-neon-1);
+}
+
+#experience-list {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.experience-item {
+    justify-content: space-between;
+    margin-bottom: 20px;
+    padding: 20px;
+}
+
+.experience-item h3 {
+    margin-bottom: 5px;
+}
+
+.experience-item p {
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+
+@media (max-width: 768px) {
+
+    #experience-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 20px;
+    }
 }
