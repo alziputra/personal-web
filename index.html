@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <!-- header -->
+    <!-- header ----------------------------------------------------------->
     <nav class="navbar">
         <div class="logo">
             <a href="#"><span>A</span>lzi.</a></div>
@@ -28,7 +28,7 @@
         <div id="menu-icon"><i class="fa-solid fa-bars"></i></div>
     </nav>
 
-    <!-- home -->
+    <!-- home ------------------------------------------------------------->
     <section id="home" class="home">
         <div class="home-content">
             <h1>Hi! I'm Alzi Rahmana Putra</h1>
@@ -60,7 +60,7 @@
         </div>
     </section>
 
-    <!-- about -->
+    <!-- about ------------------------------------------------------------>
     <section id="about" class="about">
         <div class="img-about">
             <img src="https://ik.imagekit.io/alzirahmana/web-dev.png?updatedAt=1696418831190" alt="">
@@ -81,7 +81,7 @@
         </div>
     </section>
 
-    <!-- skills -->
+    <!-- skills ----------------------------------------------------------->
     <section id="skills" class="skills">
         <h2 class="text-center">My Skills</h2>
         <div class="container-skills">
@@ -118,7 +118,7 @@
         </div>
     </section>
 
-    <!-- experience -->
+    <!-- experience ------------------------------------------------------->
     <section id="experience" class="experience">
         <h2 class="text-center">Experience</h2>
         <div id="experience-list">
@@ -129,6 +129,36 @@
     <!-- portfolio -->
 
 
+
+    <!-- contact -->
+    <section class="contact">
+        <h2 class="text-center">Contact Me</h2>
+        <form id="contactForm" class="contactForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+            <div class="form-group">
+                <button type="submit">Send</button>
+            </div>
+
+            <div id="successPopup" class="popup">
+                <span>Thank you</span>
+                <p> <br>Your Message has been sent!</p>
+                <button id="closePopup">Close</button>
+            </div>
+        </form>
+    </section>
+
+    <!-- footer ------------------------------------------------------------>
     <footer class="footer">
         <span class="footer-copy">
             &#169; All Rights Reserved By

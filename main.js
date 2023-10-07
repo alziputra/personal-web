@@ -1,9 +1,10 @@
-// JavaScript untuk mengaktifkan tombol navigasi
+// Navbar==============================================================
 document.getElementById("menu-icon").addEventListener("click", function () {
     var navList = document.querySelector(".navlist");
     navList.classList.toggle("active");
 });
 
+// Skills==============================================================
 // Dapatkan semua elemen dengan class "progress-bar"
 const skillBars = document.querySelectorAll(".progress");
 
@@ -13,7 +14,7 @@ skillBars.forEach(skillBar => {
     skillBar.style.width = percent;
 });
 
-
+//Experience=========================================================
 // Objek pengalaman kerja
 const experiences = [{
         title: "Cloud Computing",
@@ -53,10 +54,36 @@ function renderExperience() {
         experienceItem.appendChild(company);
         experienceItem.appendChild(duration);
         experienceItem.appendChild(description);
-
         experienceList.appendChild(experienceItem);
     });
 }
 
 // Panggil fungsi untuk menghasilkan pengalaman kerja
 renderExperience();
+
+
+// Contact==============================================================
+document.getElementById("contactForm").addEventListener("submit", function (event) {
+    event.preventDefault();
+
+    // Ambil nilai dari formulir
+    var name = document.getElementById("name").value;
+    var email = document.getElementById("email").value;
+    var message = document.getElementById("message").value;
+
+    // Lakukan apa pun yang diperlukan dengan data formulir (misalnya, kirim ke server atau tampilkan pesan)
+    console.log("Name: " + name);
+    console.log("Email: " + email);
+    console.log("Message: " + message);
+
+    // Tampilkan popup
+    document.getElementById("successPopup").style.display = "block";
+
+    // Clear formulir jika perlu
+    document.getElementById("contactForm").reset();
+});
+
+// Menyembunyikan popup saat tombol Tutup diklik
+document.getElementById("closePopup").addEventListener("click", function () {
+    document.getElementById("successPopup").style.display = "none";
+});

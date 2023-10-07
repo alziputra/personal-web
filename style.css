@@ -149,7 +149,8 @@ section {
     height: 45 px;
 }
 
-.btn-box a.btn {
+.btn-box a.btn,
+button {
     display: inline-flex;
     justify-content: center;
     align-items: center;
@@ -164,7 +165,8 @@ section {
     box-shadow: var(--box-neon-2);
 }
 
-.btn-box a.btn:hover {
+.btn-box a.btn,
+button:hover {
     color: var(--text-color);
     background-color: var(--primary-color);
     box-shadow: var(--box-neon-1);
@@ -264,7 +266,8 @@ section {
 .about .text-about h2,
 .skills h2,
 .experience h2,
-.portfolio h2 {
+.portfolio h2,
+.contact h2 {
     font-size: var(--font-l);
     font-weight: 700;
     padding-block: 2rem;
@@ -347,6 +350,73 @@ section {
 /* portfolio ____________________________ */
 
 
+
+
+
+/*contact ____________________________ */
+.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.contactForm {
+    width: 100%;
+    max-width: 800px;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.form-group {
+    margin: 10px 0;
+}
+
+.form-group button {
+    margin-top: 30px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 8px;
+    margin: 5px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.popup {
+    display: none;
+    position: fixed;
+    width: 600px;
+    height: 250px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--bg-color);
+    box-shadow: var(--box-neon-2);
+    color: var(--text-color);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.popup span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+.popup p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+}
+
 /* footer ____________________________ */
 .footer {
     display: flex;
@@ -354,7 +424,6 @@ section {
     align-items: center;
     width: 100%;
     padding-block: 4rem;
-    box-shadow: var(--box-neon-1);
 }
 
 .footer-copy {
