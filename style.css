@@ -9,6 +9,7 @@
     --font-l: 2em;
     --font-m: 1.5em;
     --font-s: 1em;
+    --font-ss: .9em;
     --box-neon-1: 0 0 7px #fff,
         0 0 10px #fff,
         0 0 21px #fff,
@@ -521,6 +522,100 @@ textarea {
     color: var(--text-color);
     font-size: var(--font-s);
     text-align: center;
+}
+
+
+/* blog ________________________________ */
+.hero-content {
+    height: 100%;
+    display: flex;
+    padding: 9px;
+    position: relative;
+    background: var(--secondary-color);
+    box-shadow: var(--box-neon-2);
+}
+
+.hero-content .left {
+    font-family: var(--font1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 49px;
+    z-index: 1;
+}
+
+.hero-content .left p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 2rem;
+}
+
+.hero-content .right {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero-content .right img {
+    height: 355px;
+    border: 2px solid black;
+    border-radius: 50px;
+}
+
+.articles {
+    padding: 18px;
+    margin-top: 23px;
+    position: relative;
+}
+
+.home-article {
+    display: flex;
+    width: 100%;
+    background: var(--secondary-color);
+    box-shadow: var(--box-neon-2);
+    border-radius: 5px;
+    margin: 25px;
+    align-items: center;
+}
+
+.article-img img {
+    width: 300px;
+    height: 250px;
+}
+
+.article-content {
+    align-self: center;
+    padding: 25px;
+}
+
+.article-content h3 {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--text-color);
+    padding: 10px 0;
+}
+
+.article-content span {
+    font-size: var(--font-ss);
+    color: var(--primary-color);
+    padding: 10px 0;
+}
+
+.hero-content .left p,
+.main-content p {
+    margin-top: 20px;
+}
+
+
+/* article-page-item ______________________ */
+article {
+    padding: 18px;
+    margin-top: 23px;
+    position: relative;
+}
+
+article ol li {
+    margin: 10px 0;
 }
 
 
